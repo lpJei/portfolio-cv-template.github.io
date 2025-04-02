@@ -1,0 +1,186 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{ /*cool color palette*/
+    --white: #FFF2F2;
+    --baby: #A9B5DF;
+    --ice: #7886C7;
+    --dark-blue: #2D336B;
+    --black: #36454F;
+}
+
+body{ /*background*/
+    font-family: "Work sans", sans-serif;
+    font-size: 1rem;
+    margin: 5rem 10rem;
+    height: 100%;
+    background-color: var(--baby);
+}
+
+.resume{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--white);
+    border: 1px solid none;
+}
+
+.marker::marker{
+    color: var(--baby);
+}
+
+.side{ /*side part of resume*/
+    position: relative;
+    border: 1px solid var(--dark-blue);
+    max-height: 100%;
+    max-width: 32%;
+    background-color: var(--dark-blue);
+    margin: 0 auto;
+    display: inline-block;
+    padding: 2rem;
+    color: var(--white);
+    font-size: 1.1rem;
+}
+
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.5rem;
+    margin: 1.5rem;
+    text-align: center;
+    color: white;
+}
+
+.fa-facebook, .fa-github{
+    cursor: pointer;
+    color: var(--white);
+}
+
+.fa-facebook:hover, .fa-github:hover{
+    color: #ffd43b;
+}
+
+ul li{
+    font-weight: 600;
+    font-style: italic;
+}
+
+.side-div{
+    padding: 0;
+    margin: 3rem auto;
+}
+
+.info, .section{
+    text-align: center;
+}
+
+.info{
+    font-size: 2.1rem;
+}
+
+.section{
+    padding: 0;
+    margin: 1rem;
+    font-size: 1.3rem;
+}
+
+.divider{
+    height: 3px;
+    width: 20rem;
+}
+
+.white{
+    margin: 0 auto;
+    background-color: var(--white);
+}
+
+.blue{
+    background-color: var(--ice);
+    margin: -0.5rem 0;
+}
+
+img{
+    position: relative;
+    display: block;
+    width: 70%;
+    height: auto;
+}
+
+.pic{
+    border: 6px solid var(--baby);
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.year{
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+h3{
+    color: var(--dark-blue);
+    font-size: 1.4rem;
+}
+
+h4{
+    font-size: 1.4rem;
+    margin: 1.7rem auto 0 0;
+}
+
+.bold{
+    list-style: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 1.5rem 0 0.3rem 0;
+}
+
+.track{
+    font-size: medium;
+}
+
+.bullet{
+    text-indent: 10px;
+    list-style-type: circle;
+}
+
+.half{ /*other half of resume*/
+    position: relative;
+    width: 70%;
+    height: 100%;
+    padding: 0 2rem 0 2rem;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid transparent;
+}
+
+.soft-hard{
+    font-size: 1.2rem;
+}
+
+.paragraph{
+    text-align: justify;
+}
+
+.parts{
+    margin: 2rem 0;
+}
+
+.projects{
+    margin: 2rem auto;
+}
+
+.description{
+    font-style: italic;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.gallery{
+    display: flex;
+    white-space: nowrap;
+    overflow: auto;
+    padding: 1rem;
+    background-color: var(--baby);
+}
